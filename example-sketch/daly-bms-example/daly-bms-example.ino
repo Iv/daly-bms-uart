@@ -51,7 +51,7 @@ void loop()
 
   for (size_t i = 0; i < size_t(bms.get.numberOfCells); i++)
   {
-    Serial.println("Remaining Capacity mAh:      " + (String)bms.get.cellVmV[i]);
+    Serial.println("Cell voltage:      " + (String)(bms.get.cellVmV[i]/1000.));
   }
 
   // Alarm flags
